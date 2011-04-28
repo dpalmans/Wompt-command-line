@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		746F3FEE13553FD700D271F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746F3FED13553FD700D271F1 /* Foundation.framework */; };
+		746F3FF113553FD700D271F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F3FF013553FD700D271F1 /* main.m */; };
+		746F3FFC13553FF100D271F1 /* WebSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F3FFB13553FF100D271F1 /* WebSocketConnection.m */; };
+		746F40061355400A00D271F1 /* NSArray+BSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F3FFF1355400A00D271F1 /* NSArray+BSJSONAdditions.m */; };
+		746F40071355400A00D271F1 /* NSDictionary+BSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F40011355400A00D271F1 /* NSDictionary+BSJSONAdditions.m */; };
+		746F40081355400A00D271F1 /* NSScanner+BSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F40031355400A00D271F1 /* NSScanner+BSJSONAdditions.m */; };
+		746F40091355400A00D271F1 /* NSString+BSJSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F40051355400A00D271F1 /* NSString+BSJSONAdditions.m */; };
+		746F400C1355403A00D271F1 /* Wompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 746F400B1355403A00D271F1 /* Wompt.m */; };
+		74ABAB641357D27B00C9ADCC /* libncurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 74ABAB631357D27B00C9ADCC /* libncurses.dylib */; };
+		74B57C921356D7F5006F4655 /* SocketIOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B57C911356D7F5006F4655 /* SocketIOConnection.m */; };
+		74F30E5B1357CEEB006EC5BD /* libcdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F30E5A1357CEEB006EC5BD /* libcdk.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		746F3FE713553FD700D271F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		746F3FE913553FD700D271F1 /* Wompt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wompt; sourceTree = BUILT_PRODUCTS_DIR; };
+		746F3FED13553FD700D271F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		746F3FF013553FD700D271F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		746F3FF313553FD700D271F1 /* Wompt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wompt-Prefix.pch"; sourceTree = "<group>"; };
+		746F3FF413553FD700D271F1 /* Wompt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Wompt.1; sourceTree = "<group>"; };
+		746F3FFA13553FF100D271F1 /* WebSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketConnection.h; sourceTree = "<group>"; };
+		746F3FFB13553FF100D271F1 /* WebSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketConnection.m; sourceTree = "<group>"; };
+		746F3FFE1355400A00D271F1 /* NSArray+BSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BSJSONAdditions.h"; sourceTree = "<group>"; };
+		746F3FFF1355400A00D271F1 /* NSArray+BSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BSJSONAdditions.m"; sourceTree = "<group>"; };
+		746F40001355400A00D271F1 /* NSDictionary+BSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BSJSONAdditions.h"; sourceTree = "<group>"; };
+		746F40011355400A00D271F1 /* NSDictionary+BSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BSJSONAdditions.m"; sourceTree = "<group>"; };
+		746F40021355400A00D271F1 /* NSScanner+BSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+BSJSONAdditions.h"; sourceTree = "<group>"; };
+		746F40031355400A00D271F1 /* NSScanner+BSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+BSJSONAdditions.m"; sourceTree = "<group>"; };
+		746F40041355400A00D271F1 /* NSString+BSJSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSJSONAdditions.h"; sourceTree = "<group>"; };
+		746F40051355400A00D271F1 /* NSString+BSJSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSJSONAdditions.m"; sourceTree = "<group>"; };
+		746F400A1355403A00D271F1 /* Wompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wompt.h; sourceTree = "<group>"; };
+		746F400B1355403A00D271F1 /* Wompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wompt.m; sourceTree = "<group>"; };
+		74ABAB631357D27B00C9ADCC /* libncurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.dylib; path = ../../../../usr/lib/libncurses.dylib; sourceTree = "<group>"; };
+		74B57C901356D7F5006F4655 /* SocketIOConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOConnection.h; sourceTree = "<group>"; };
+		74B57C911356D7F5006F4655 /* SocketIOConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOConnection.m; sourceTree = "<group>"; };
+		74F30E5A1357CEEB006EC5BD /* libcdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcdk.a; path = ../../../../usr/local/lib/libcdk.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		746F3FE613553FD700D271F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746F3FEE13553FD700D271F1 /* Foundation.framework in Frameworks */,
+				74F30E5B1357CEEB006EC5BD /* libcdk.a in Frameworks */,
+				74ABAB641357D27B00C9ADCC /* libncurses.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		746F3FDE13553FD700D271F1 = {
+			isa = PBXGroup;
+			children = (
+				746F3FEF13553FD700D271F1 /* Wompt */,
+				746F3FEC13553FD700D271F1 /* Frameworks */,
+				746F3FEA13553FD700D271F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		746F3FEA13553FD700D271F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746F3FE913553FD700D271F1 /* Wompt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746F3FEC13553FD700D271F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F30E5A1357CEEB006EC5BD /* libcdk.a */,
+				74ABAB631357D27B00C9ADCC /* libncurses.dylib */,
+				746F3FED13553FD700D271F1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		746F3FEF13553FD700D271F1 /* Wompt */ = {
+			isa = PBXGroup;
+			children = (
+				746F3FFD1355400A00D271F1 /* JSONSupport */,
+				74B57C8E1356D7D4006F4655 /* WebSockets */,
+				746F3FF013553FD700D271F1 /* main.m */,
+				746F400A1355403A00D271F1 /* Wompt.h */,
+				746F400B1355403A00D271F1 /* Wompt.m */,
+				746F3FF213553FD700D271F1 /* Supporting Files */,
+			);
+			path = Wompt;
+			sourceTree = "<group>";
+		};
+		746F3FF213553FD700D271F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				746F3FF413553FD700D271F1 /* Wompt.1 */,
+				746F3FF313553FD700D271F1 /* Wompt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		746F3FFD1355400A00D271F1 /* JSONSupport */ = {
+			isa = PBXGroup;
+			children = (
+				746F3FFE1355400A00D271F1 /* NSArray+BSJSONAdditions.h */,
+				746F3FFF1355400A00D271F1 /* NSArray+BSJSONAdditions.m */,
+				746F40001355400A00D271F1 /* NSDictionary+BSJSONAdditions.h */,
+				746F40011355400A00D271F1 /* NSDictionary+BSJSONAdditions.m */,
+				746F40021355400A00D271F1 /* NSScanner+BSJSONAdditions.h */,
+				746F40031355400A00D271F1 /* NSScanner+BSJSONAdditions.m */,
+				746F40041355400A00D271F1 /* NSString+BSJSONAdditions.h */,
+				746F40051355400A00D271F1 /* NSString+BSJSONAdditions.m */,
+			);
+			path = JSONSupport;
+			sourceTree = "<group>";
+		};
+		74B57C8E1356D7D4006F4655 /* WebSockets */ = {
+			isa = PBXGroup;
+			children = (
+				74B57C901356D7F5006F4655 /* SocketIOConnection.h */,
+				74B57C911356D7F5006F4655 /* SocketIOConnection.m */,
+				746F3FFA13553FF100D271F1 /* WebSocketConnection.h */,
+				746F3FFB13553FF100D271F1 /* WebSocketConnection.m */,
+			);
+			name = WebSockets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		74F30EF01357CFA0006EC5BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		746F3FE813553FD700D271F1 /* Wompt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746F3FF713553FD700D271F1 /* Build configuration list for PBXNativeTarget "Wompt" */;
+			buildPhases = (
+				74F30EF01357CFA0006EC5BD /* Headers */,
+				746F3FE513553FD700D271F1 /* Sources */,
+				746F3FE613553FD700D271F1 /* Frameworks */,
+				746F3FE713553FD700D271F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wompt;
+			productName = Wompt;
+			productReference = 746F3FE913553FD700D271F1 /* Wompt */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		746F3FE013553FD700D271F1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 746F3FE313553FD700D271F1 /* Build configuration list for PBXProject "Wompt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 746F3FDE13553FD700D271F1;
+			productRefGroup = 746F3FEA13553FD700D271F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				746F3FE813553FD700D271F1 /* Wompt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		746F3FE513553FD700D271F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746F3FF113553FD700D271F1 /* main.m in Sources */,
+				746F3FFC13553FF100D271F1 /* WebSocketConnection.m in Sources */,
+				746F40061355400A00D271F1 /* NSArray+BSJSONAdditions.m in Sources */,
+				746F40071355400A00D271F1 /* NSDictionary+BSJSONAdditions.m in Sources */,
+				746F40081355400A00D271F1 /* NSScanner+BSJSONAdditions.m in Sources */,
+				746F40091355400A00D271F1 /* NSString+BSJSONAdditions.m in Sources */,
+				746F400C1355403A00D271F1 /* Wompt.m in Sources */,
+				74B57C921356D7F5006F4655 /* SocketIOConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		746F3FF513553FD700D271F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		746F3FF613553FD700D271F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		746F3FF813553FD700D271F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wompt/Wompt-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		746F3FF913553FD700D271F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wompt/Wompt-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		746F3FE313553FD700D271F1 /* Build configuration list for PBXProject "Wompt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746F3FF513553FD700D271F1 /* Debug */,
+				746F3FF613553FD700D271F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746F3FF713553FD700D271F1 /* Build configuration list for PBXNativeTarget "Wompt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746F3FF813553FD700D271F1 /* Debug */,
+				746F3FF913553FD700D271F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 746F3FE013553FD700D271F1 /* Project object */;
+}
