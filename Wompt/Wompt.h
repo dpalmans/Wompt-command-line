@@ -15,10 +15,10 @@
 @interface Wompt : NSObject <WebSocketConnectionDelegate> {
 @private
     SocketIOConnection * _womptConnection;
-	
+
     NSString * _channel;
-	NSURL * _channelURL;
-	
+    NSURL * _channelURL;
+
     NSString * _connectorID;    
     NSString * _connectionID;
     

@@ -69,7 +69,6 @@
             }
                 
             case 'h':
-//				NSLog(@"Heartbeat: %u %u", atoi((char *)&_pos[3]), _heartbeat);
                 [self sendMessage:[NSString stringWithFormat:@"~h~%d", _heartbeat++]];
                 break;
         }
@@ -81,13 +80,13 @@
 
 - (void)sendMessage:(NSString *)string
 {
-	NSString * message = [NSString stringWithFormat:@"~m~%u~m~%@", [string length], string];
-	[self sendData:[message dataUsingEncoding:NSUTF8StringEncoding]];
+    NSString * message = [NSString stringWithFormat:@"~m~%u~m~%@", [string length], string];
+    [self sendData:[message dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 - (void)sendDict:(NSDictionary *)dict
 {
-	[self sendMessage:[dict jsonStringValue]];
+    [self sendMessage:[dict jsonStringValue]];
 }
 
 @end

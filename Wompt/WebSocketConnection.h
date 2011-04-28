@@ -18,19 +18,19 @@
 @protected
     id <WebSocketConnectionDelegate> _delegate;
     NSString *_hostName;
-	short _port;
+    short _port;
 
-@private	
-	int _sock;
-	dispatch_source_t _readSource;
-	
+@private
+    int _sock;
+    dispatch_source_t _readSource;
+
     uint8_t *_pos;
-	uint8_t *_buffer;
-	size_t _bufferlen;
+    uint8_t *_buffer;
+    size_t _bufferlen;
     
     uint8_t _readbuf[4096];
-	
-	NSData * _challenge;
+
+    NSData * _challenge;
     
     int _state;
     int _counter;

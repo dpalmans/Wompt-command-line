@@ -23,8 +23,8 @@ static BINDFN_PROTO(tabCB);
 {
     self = [super init];
     if (self) {
-		_channel = [channel retain];
-		_channelURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://wompt.com/chat/%@", _channel]];
+        _channel = [channel retain];
+        _channelURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://wompt.com/chat/%@", _channel]];
 
         _formatter = [[NSDateFormatter alloc] init];
         [_formatter setDateFormat:@"hh:mm:ss"];
@@ -49,12 +49,12 @@ static BINDFN_PROTO(tabCB);
 - (void)connect
 {
 #if 0
-	// Request this chat page to get a connector_id.
-	NSURLRequest * request = [NSURLRequest requestWithURL:_channelURL];
-	NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString * html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    // Request this chat page to get a connector_id.
+    NSURLRequest * request = [NSURLRequest requestWithURL:_channelURL];
+    NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString * html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
     
-	// Find the connector_id in the resulting html
+    // Find the connector_id in the resulting html
     regex_t re;
     regmatch_t * matches = malloc(2 * sizeof(regmatch_t));
 
@@ -68,14 +68,14 @@ static BINDFN_PROTO(tabCB);
     // Use the reauthenticate method to get a connector_id.
     NSURL * url = [NSURL URLWithString:@"http://wompt.com/re-authenticate"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
-	NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSString * html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString * html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 
     NSDictionary * dict = [NSDictionary dictionaryWithJSONString:html];
     _connectorID = [[dict objectForKey:@"connector_id"] retain];
 #endif
     
-	// Connect!
+    // Connect!
     _womptConnection = [[SocketIOConnection alloc] initWithHost:@"wompt.com" port:80 delegate:self];
 }
 
@@ -83,23 +83,23 @@ static BINDFN_PROTO(tabCB);
 {
     return nil;
     /*
-	// Get cookies for our channel url
-	NSArray * cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:_channelURL];
-	return [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
+    // Get cookies for our channel url
+    NSArray * cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:_channelURL];
+    return [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
     */
 }
 
 - (void)gotConnectionID:(NSString *)connectionID
 {
-	// We're connected, try to join the channel
-	NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys:
+    // We're connected, try to join the channel
+    NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys:
                            @"join", @"action",
                            @"chat", @"namespace",
                            _channel, @"channel",
                            _connectorID, @"connector_id", nil];
     [_womptConnection sendDict:dict];
 
-	// Save our connectionID to indicate we're connected
+    // Save our connectionID to indicate we're connected
     _connectionID = [connectionID retain];
 
 //    NSLog(@"connectionID: %@", _connectionID);
@@ -270,8 +270,8 @@ static BINDFN_PROTO(tabCB);
 
 static int tabCB(EObjectType cdktype GCC_UNUSED, void *object, void *clientData, chtype key GCC_UNUSED)
 {
-    CDKSWINDOW *swindow	= (CDKSWINDOW *)clientData;
-    CDKENTRY *entry	= (CDKENTRY *)object;
+    CDKSWINDOW *swindow = (CDKSWINDOW *)clientData;
+    CDKENTRY *entry     = (CDKENTRY *)object;
     
     activateCDKSwindow(swindow, 0);    
     drawCDKEntry (entry, ObjOf(entry)->box);
